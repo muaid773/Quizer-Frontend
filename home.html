@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quizer - Home</title>
+<link rel="stylesheet" href="/static/css/home.css">
+</head>
+<body>
+<nav>
+    <div class="left">
+        <img src="/static/images/logo.png" alt="LOGO">
+        <span>Quizer</span>
+    </div>
+    <div class="right">
+        <div class="badge badge-gem" id="gem-count">💎 0</div>
+        <div class="badge badge-star" id="stars-count">⭐ 0</div>
+        <button class="badge badge-info" id="dev-info-btn" title="Dev Info">🛠</button>
+        <button class="badge badge-info" id="admin-panel-btn" title="Admin Panel" onclick="window.location.href='/admin/panel.html'">🛡 Admin</button>
+    </div>
+
+</nav>
+
+<!-- Developer Modal -->
+<div id="dev-info-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="close-dev-modal">&times;</span>
+
+    <!-- Profile Header -->
+    <div class="dev-info-header">
+      <img src="/static/images/logo.png" alt="Developer Photo" class="dev-photo">
+      <div class="dev-info">
+        <h2>Muaid</h2>
+        <p class="project-name">Quizer - Quiz Platform</p>
+        <p class="role">Developer & Project Creator</p>
+      </div>
+    </div>
+    <!-- Tabs -->
+    <div class="tabs">
+        <div class="tab active" data-lang="en">English</div>
+        <div class="tab" data-lang="ar">عربي</div>
+    </div>
+
+    <!-- Tab contents -->
+    <div class="tab-content active" id="content-en">
+        <h2>Developer Info</h2>
+        <img src="/static/images/dev-img.jpg" class="dev-profile">
+        <p><strong>Name:</strong> Muaid</p>
+        <p><strong>Project:</strong> Quizer - Quiz Platform</p>
+        <p><strong>Notes:</strong> This project is a learning and quiz app.</p>
+    </div>
+
+    <div class="tab-content" id="content-ar">
+        <h2>معلومات المطور</h2>
+        <img src="/static/images/dev-img.jpg" class="dev-profile">
+        <p><strong>الاسم:</strong> مؤيد علي</p>
+        <p><strong>المشروع:</strong> Quizer - منصة الاختبارات</p>
+        <p><strong>ملاحظات:</strong> هذا المشروع لتعلم وإنشاء الاختبارات.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="buy-stars" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="close-buy-stars">&times;</span>
+        <h2 style="text-align:center;">Buy Stars</h2>
+        <div class="packags-content">
+            <div class="packags-row" id="packags-row">
+                <!-- البطاقات سيتم توليدها هنا -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="welcome-container">
+
+        <!-- Decorative SVG -->
+        <svg class="welcome-bg" viewBox="0 0 600 120" preserveAspectRatio="none">
+            <path d="M0,40 C80,80 160,0 240,20 320,40 400,100 480,60 540,30 600,40 600,40 L600,0 L0,0 Z"/>
+        </svg>
+
+        <div class="welcome-content">
+            <div class="welcome-text">
+                <h1 id="welcome-text">------------------</h1>
+                <span class="welcome-sub">Choose a section and start the challenge</span>
+            </div>
+
+            <button class="collapse-btn" id="collapse-all">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                Collapse All
+            </button>
+        </div>
+
+    </div>
+
+    <div id="sections-container"></div>
+</div>
+<script src="/static/js/base.js"></script>
+<script src="/static/js/home.js"></script>
+</body>
+</html>

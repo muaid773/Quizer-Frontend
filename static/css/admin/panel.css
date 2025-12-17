@@ -1,0 +1,170 @@
+:root {
+    --pink: #f0074d;
+    --background-dark: #1e2633;
+    --background-light: #ffffff;
+    --text-dark: #ffffff;
+    --text-light: #222222;
+    --input-bg-dark: rgba(255,255,255,0.1);
+    --input-bg-light: rgba(0,0,0,0.05);
+    --input-border: var(--pink);
+    --btn-primary: var(--pink);
+    --btn-primary-hover: #f22a5f;
+    --btn-secondary: #273652;
+    --btn-secondary-hover: #1f2a3d;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: var(--background-dark);
+        color: var(--text-dark);
+    }
+    .sidebar {
+        background: #2b3748;
+        color: var(--text-dark);
+    }
+    .main-panel {
+        background: var(--background-dark);
+        color: var(--text-dark);
+    }
+    input, textarea, select {
+        background: var(--input-bg-dark);
+        color: var(--text-dark);
+        border: 1px solid var(--input-border);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: var(--background-light);
+        color: var(--text-light);
+    }
+    .sidebar {
+        background: var(--background-light);
+        color: var(--text-light);
+    }
+    .main-panel {
+        background: var(--background-light);
+        color: var(--text-light);
+    }
+    input, textarea, select {
+        background: var(--input-bg-light);
+        color: var(--text-light);
+        border: 1px solid var(--input-border);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+}
+
+.main-panel {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.card {
+    background: var(--background-light);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    .card {
+        background: #2c3b50;
+    }
+}
+
+.card:hover {
+    background: var(--pink);
+    color: var(--text-dark);
+}
+
+.card-details {
+    flex: 1;
+}
+
+.correct-option {
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.hidden { display: none; }
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background 0.2s;
+}
+
+.btn-warning {
+    background: var(--btn-secondary);
+    color: var(--text-light);
+}
+.btn-warning:hover {
+    background: var(--btn-secondary-hover);
+}
+
+.btn-danger {
+    background: #d9534f;
+    color: var(--text-light);
+}
+.btn-danger:hover {
+    background: #c9302c;
+}
+
+.btn-add-option {
+    background: var(--btn-primary);
+    color: var(--text-light);
+    margin-top: 5px;
+}
+.btn-add-option:hover {
+    background: var(--btn-primary-hover);
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#form-actions { margin-top: 10px; }
+#activate-admin-btn {
+    background: #17a2b8; 
+    color: #fff;
+}
+
+#activate-admin-btn:hover {
+    background: #138496;
+}

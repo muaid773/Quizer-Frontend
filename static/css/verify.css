@@ -1,0 +1,30 @@
+:root {
+    --pink: #f0074d;
+    --background-dark: #1e2633;
+    --background-light: #f5f5f5;
+    --text-dark: #fff;
+    --text-light: #222;
+    --btn-primary: #ff004c;
+    --btn-primary-hover: #f0074d;
+    --btn-secondary: #273652;
+    --btn-secondary-hover: #1f2a3d;
+}
+body, html { margin:0; padding:0; font-family:'Arial', sans-serif; height:100%; }
+@media (prefers-color-scheme: dark) {
+    body { background-color: var(--background-dark); color: var(--text-dark); }
+}
+@media (prefers-color-scheme: light) {
+    body { background-color: var(--background-light); color: var(--text-light); }
+}
+nav { display:flex; justify-content:space-between; align-items:center; padding:10px 20px; background-color: var(--pink); border-radius:0 0 10px 10px; font-weight:600; font-size:18px; position:sticky; top:0; z-index:1000; }
+nav .left { display:flex; align-items:center; }
+nav .left img { width:50px; height:50px; border-radius:50%; border:2px solid aqua; margin-right:10px; }
+nav .right button { margin-left:10px; }
+.btn { padding:10px 25px; border-radius:25px; font-size:16px; font-weight:bold; cursor:pointer; border:none; transition:all 0.3s ease; color:white; }
+.btn.signin { background-color: var(--btn-primary); }
+.btn.signin:hover { background-color: var(--btn-primary-hover); }
+.btn.login { background-color: var(--btn-secondary); border:2px solid var(--btn-primary); }
+.btn.login:hover { background-color: var(--btn-secondary-hover); }
+.sections-container { display:flex; justify-content:center; align-items:center; height:calc(100vh - 70px); background: url('/static/images/study-bg.jpg') no-repeat center center fixed; background-size: cover; position: relative; }
+.section { position: relative; background-color: rgba(255, 255, 255, 0.1); padding: 40px 60px; border-radius: 20px; text-align: center; z-index: 1; color: white; max-width: 500px; width: 90%; box-shadow: 0 8px 20px rgba(0,0,0,0.5); }
+input { padding:10px; border-radius:10px; border:none; margin-bottom:15px; width:80%; font-size:16px; }

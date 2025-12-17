@@ -1,0 +1,86 @@
+:root {
+    --pink: #f0074d;
+    --background-dark: #1e2633;
+    --background-light: #f5f5f5;
+    --text-dark: #fff;
+    --text-light: #222;
+    --btn-primary: #ff004c;
+    --btn-primary-hover: #c40740;
+    --btn-secondary: #273652;
+    --btn-secondary-hover: #1f2a3d;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+.container {
+    background: var(--background-light);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 400px;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--text-light);
+    background-color: var(--btn-primary);
+    transition: background 0.2s;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+
+button:hover {
+    background-color: var(--btn-primary-hover);
+}
+
+#result {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.btn-warning {
+    background-color: var(--btn-warning);
+    color: #000;
+}
+
+.btn-warning:hover {
+    background-color: var(--btn-warning-hover);
+}
+
+/*Dark mode*/
+@media (prefers-color-scheme: dark) {
+    body { background-color: var(--background-dark); color: var(--text-dark); }
+    .container {background: var(--background-dark)}
+    h2 {color: var(--text-dark);}
+    button {color: var(--text-dark);}
+}

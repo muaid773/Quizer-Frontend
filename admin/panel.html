@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Panel</title>
+<link rel="stylesheet" href="/static/css/admin/panel.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="sidebar-header">
+        <button id="activate-admin-btn" class="btn" title="Activate Admin"  onclick="window.location.href='/admin/activate_admin.html'">🛡 Activate Admin</button>
+        <h3>Subjects</h3>
+    </div>
+    <div id="subject-list"></div>
+    <button id="add-subject-btn" class="btn btn-warning">+ Add Subject</button>
+</div>
+
+
+<div class="main-panel">
+    <h3 id="quizzes-title">Quizzes</h3>
+    <div id="list-view-area">
+        <div id="quiz-list"></div>
+        <button id="add-quiz-btn" class="btn btn-warning hidden">+ Add Quiz</button>
+
+        <div id="question-management" class="hidden">
+            <h4>Questions</h4>
+            <div id="question-list"></div>
+            <button id="add-question-btn" class="btn btn-warning">+ Add Question</button>
+        </div>
+    </div>
+
+    <!-- Form Edit Area -->
+    <div id="form-edit-area" class="hidden">
+        <h3 id="form-title"></h3>
+        <form id="edit-form">
+            <div id="form-fields"></div>
+            <div id="form-actions">
+                <button type="submit" class="btn btn-warning">Save</button>
+                <button type="button" id="form-cancel" class="btn btn-danger">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="/static/js/base.js"></script>
+<script src="/static/js/admin_panel.js"></script>
+</body>
+</html>

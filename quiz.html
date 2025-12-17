@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Quizer - quize</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/static/css/quize.css">
+</head>
+<body>
+<nav>
+    <div class="left">
+        <img src="static/images/logo.png" alt="LOGO">
+        <span>Quizer</span>
+    </div>
+    <div class="right">
+        <div class="badge badge-gem" id="current-gems">💎 0</div>
+        <div class="badge badge-star" id="current-stars">⭐ 0</div>
+        <div id="sound-toggle" title="Toggle sound">🔔</div>
+    </div>
+</nav>
+
+<div class="container" id="container">
+    <h2 id="quiz-title">Loading Quiz...</h2>
+    <div id="questions-container"></div>
+
+    <div id="navigation">
+        <button id="prev-btn">Previous</button>
+        <button id="submit-btn">Submit Answer</button>
+        <button id="next-btn">Next</button>
+    </div>
+</div>
+
+<div id="result-overlay">
+    <div id="result-card">
+        <div id="score-circle">0%</div>
+        <p id="result-message"></p>
+        <div id="final-gems"></div>
+        <button id="review-quiz-btn">Review Questions</button>
+        <button onclick="window.location.href='/home.html'">Back to Home</button>
+    </div>
+</div>
+
+<audio id="sound-select" src="/static/sounds/select.mp3" preload="auto"></audio>
+<audio id="sound-correct" src="/static/sounds/correct.mp3" preload="auto"></audio>
+<audio id="sound-wrong" src="/static/sounds/wrong.mp3" preload="auto"></audio>
+
+<script src="/static/js/base.js"></script>
+<script src="/static/js/quiz.js"></script>
+</body>
+</html>
