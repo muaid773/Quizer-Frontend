@@ -33,10 +33,10 @@ By solving questions and receiving immediate feedback, students learn from mista
 Here are some screenshots of the Quizer Frontend:
 
 ![Landing Page](./static/images/landing-page.png)
-![Landing Page 2](./static/images/landing-page.png)
+![Admin Panel](./static/images/admin_panel.png)
 ![Home Page](./static/images/home.png)
 ![Quiz Page](./static/images/quize.png)
-![Admin Panel](./static/images/admin_panel.png)
+
 
 
 ## Project Architecture
@@ -82,10 +82,9 @@ A complete setup typically includes:
 
 * Deploying the Quizer Backend API on a server.
 * Deploying this frontend on:
-
   * A public hosting service, or
   * A local network server (for schools or institutions).
-* Configuring `ApiUrl` to point to the backend API.
+* Configuring `ApiUrl` in the frontend to point to the backend API.
 
 ---
 
