@@ -224,7 +224,7 @@ class QuizApp {
 
 // --- Initialize App ---
 const userData = JSON.parse(localStorage.getItem("QuizerDataUser"));
-if(!userData?.jwt){ window.location.href="/login.html"; }
+if(!userData?.jwt){ window.location.href="login.html"; }
 const urlParams = new URLSearchParams(window.location.search);
 const quizId = urlParams.get("quiz_id");
 if(!quizId){ alert("Quiz ID missing"); throw new Error("Quiz ID missing"); }

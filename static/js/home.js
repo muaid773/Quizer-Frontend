@@ -14,7 +14,7 @@ const token = userData?.jwt;
 
 // Redirect to login if token not available
 if (!token) {
-    window.location.href = "/login.html";
+    window.location.href = "login.html";
 }
 
 // ==============================

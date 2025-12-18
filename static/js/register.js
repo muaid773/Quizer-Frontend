@@ -26,7 +26,7 @@ document.getElementById("register-form").addEventListener("submit", async (e) =>
                 }));
 
                 console.log("User data stored:", data);
-                window.location.href = "/verify.html";
+                window.location.href = "verify.html";
             }
         } else {
             console.error("Registration failed:", data.detail);

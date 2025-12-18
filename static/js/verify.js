@@ -1,6 +1,6 @@
 const stored = localStorage.getItem(LocalDataName);
 if (!stored) {
-    window.location.href = "/login.html";
+    window.location.href = "login.html";
 } 
 const userData = JSON.parse(stored);
 
@@ -34,7 +34,7 @@ verifyBtn.addEventListener('click', async () => {
                 email: data.email
             }));
 
-            location.replace("/home.html");
+            location.replace("home.html");
 
         } else {
             alert(data.detail || 'Invalid verification code');

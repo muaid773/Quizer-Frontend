@@ -23,7 +23,7 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
                 email: data.email
             }));
             console.log("Stored", data);
-            window.location.href = "/home.html"; 
+            window.location.href = "home.html"; 
         } else {
             console.error("Login error:", data.detail);
             alert("Login error: " + data.detail);
