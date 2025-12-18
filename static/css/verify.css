@@ -28,3 +28,8 @@ nav .right button { margin-left:10px; }
 .sections-container { display:flex; justify-content:center; align-items:center; height:calc(100vh - 70px); background: url('/static/images/study-bg.jpg') no-repeat center center fixed; background-size: cover; position: relative; }
 .section { position: relative; background-color: rgba(255, 255, 255, 0.1); padding: 40px 60px; border-radius: 20px; text-align: center; z-index: 1; color: white; max-width: 500px; width: 90%; box-shadow: 0 8px 20px rgba(0,0,0,0.5); }
 input { padding:10px; border-radius:10px; border:none; margin-bottom:15px; width:80%; font-size:16px; }
+
+a {padding:10px 25px; border-radius:25px; font-size:16px; font-weight:bold; cursor:pointer; border:none; transition:all 0.3s ease; color:white; 
+    color: var(--pink);
+
+}
