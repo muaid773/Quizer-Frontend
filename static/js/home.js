@@ -118,7 +118,7 @@ function createQuizItem(quiz) {
     openBtn.innerText = quiz.title;
     openBtn.title = "Open quiz";
     openBtn.onclick = () => {
-        window.location.href = `/quiz.html?quiz_id=${quiz.id}`;
+        window.location.href = `quiz.html?quiz_id=${quiz.id}`;
     };
 
     const optionsDiv = document.createElement("div");
